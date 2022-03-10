@@ -16,6 +16,9 @@
         </config-file>
         
         <hook type="after_plugin_install" src="hooks/android/appendBuildScript.js" />
+        <hook type="after_plugin_install" src="hooks/android/CompatibilityMabs8and7.js" />
+        <hook type="after_prepare" src="hooks/android/CompatibilityMabs8and7.js" />
+        <hook type="before_build" src="hooks/android/CompatibilityMabs8and7.js" />
 
         <framework src="src/android/dependency.gradle" custom="true" type="gradleReference" />
         
